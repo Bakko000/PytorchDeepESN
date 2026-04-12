@@ -75,6 +75,8 @@ features, all_states = model(x)
 ## 2. Train the readout 
 ### Find the best validation performance and the best lambda
 
+For multiclassification, remember to give to the readout the onehot representation. Conversely, for the binary case, just encode in {+1, -1}
+
 ```text
 val_error, fit_time_s, fit_time_ms = model.fit(
     train=features,
