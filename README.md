@@ -96,5 +96,6 @@ predictions = model.predict(test_features)
 ---
 
 # Authors
-Prof. Claudio Gallicchio — original DeepESN formulation and deep reservoir computing research
-Dr. Corrado Baccheschi — PyTorch implementation and extensions
+-Prof. Claudio Gallicchio — original DeepESN formulation and deep reservoir computing research
+
+-Dr. Corrado Baccheschi — PyTorch implementation and extensions
