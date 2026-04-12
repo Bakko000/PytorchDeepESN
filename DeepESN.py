@@ -34,7 +34,7 @@ class DeepESN(nn.Module):
     Implements a Deep Echo State Network (DeepESN) model for time-series classification or regression problems.
     This model consists of:
     - From 1 to multiple recurrent layers, each utilizing a `ReservoirCell` or bidirectional one for nonlinear feature extraction.
-    - A trainable ridge readout layer for big data for producing the final predictions.
+    - A trainable ridge readout layer for big data for producing the final predictions. 
 
     Reference:
     Gallicchio, Claudio, Alessio Micheli, and Luca Pedrelli.
@@ -238,7 +238,9 @@ class DeepESN(nn.Module):
         """
         Fits the Readout layer to the given training data, with optional validation.
 
-        This function initializes and trains a custom Readout layer for big data using the provided training data. 
+        This function initializes and trains a custom Readout layer for big data using the provided training data.
+        It supports labels in onehot encoding for multiclassification task
+        with an argmax as a function on the prediction, and the binary case in {+1,-1} as it uses torch.sign.
         It supports both full dataset training and batch-based training. If validation data is provided, 
         the model evaluates performance using either accuracy or F1-score (in this context, macro).
         It is possible to add other metrics, just edit the validate function.
