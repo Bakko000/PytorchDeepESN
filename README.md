@@ -1,6 +1,6 @@
 # Deep Reservoir Computing with Linear Readout for Big Data
 
-A PyTorch implementation of **Deep Echo State Networks (DeepESN)** and related reservoir computing models, designed for efficient sequence representation learning with a **fixed recurrent backbone** and a **linear ridge readout**.
+A PyTorch implementation of **Deep Echo State Networks (DeepESN)** and related reservoir computing models, designed for efficient sequence representation with a **fixed recurrent backbone** and a **linear ridge readout**.
 
 This repository focuses on the following idea:
 
