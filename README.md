@@ -20,8 +20,8 @@ This repository implements:
 - **deep ESN**
 - **bidirectional DeepESN**
 - **ridge-based linear readout**
-- support for **sequence-to-sequence** and **sequence-to-one/sequence-to-vector** outputs
-- support for (mean)pooled/last-state outputs
+- support for **sequence-to-sequence** and **sequence-to-one/sequence-to-vector** tasks
+- support for (mean)pooled or last-state outputs
 - support for **large datasets** through a readout fitting procedure based on sufficient statistics
 
 ---
