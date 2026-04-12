@@ -93,3 +93,8 @@ val_error, fit_time_s, fit_time_ms = model.fit(
 ```text
 predictions = model.predict(test_features)
 ```
+---
+
+# Authors
+Prof. Claudio Gallicchio — original DeepESN formulation and deep reservoir computing research
+Dr. Corrado Baccheschi — PyTorch implementation and extensions
